@@ -87,6 +87,7 @@ namespace GeneratorPasswordsByArt {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(mainform::typeid));
 			this->GenerateButton = (gcnew System::Windows::Forms::Button());
 			this->UpperLettersCheck = (gcnew System::Windows::Forms::CheckBox());
 			this->LowerLettersCheck = (gcnew System::Windows::Forms::CheckBox());
@@ -108,57 +109,78 @@ namespace GeneratorPasswordsByArt {
 			// 
 			// GenerateButton
 			// 
+			this->GenerateButton->BackColor = System::Drawing::Color::Transparent;
 			this->GenerateButton->Location = System::Drawing::Point(312, 244);
 			this->GenerateButton->Name = L"GenerateButton";
-			this->GenerateButton->Size = System::Drawing::Size(149, 47);
+			this->GenerateButton->Size = System::Drawing::Size(150, 50);
 			this->GenerateButton->TabIndex = 0;
 			this->GenerateButton->Text = L"Generate";
-			this->GenerateButton->UseVisualStyleBackColor = true;
+			this->GenerateButton->UseVisualStyleBackColor = false;
 			this->GenerateButton->Click += gcnew System::EventHandler(this, &mainform::GenerateButton_Click);
 			// 
 			// UpperLettersCheck
 			// 
 			this->UpperLettersCheck->AutoSize = true;
+			this->UpperLettersCheck->BackColor = System::Drawing::Color::Transparent;
+			this->UpperLettersCheck->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->UpperLettersCheck->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->UpperLettersCheck->Location = System::Drawing::Point(47, 57);
 			this->UpperLettersCheck->Name = L"UpperLettersCheck";
-			this->UpperLettersCheck->Size = System::Drawing::Size(116, 17);
+			this->UpperLettersCheck->Size = System::Drawing::Size(159, 23);
 			this->UpperLettersCheck->TabIndex = 2;
 			this->UpperLettersCheck->Text = L"Upper Letters (A-Z)";
-			this->UpperLettersCheck->UseVisualStyleBackColor = true;
+			this->UpperLettersCheck->UseVisualStyleBackColor = false;
 			// 
 			// LowerLettersCheck
 			// 
 			this->LowerLettersCheck->AutoSize = true;
+			this->LowerLettersCheck->BackColor = System::Drawing::Color::Transparent;
+			this->LowerLettersCheck->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->LowerLettersCheck->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->LowerLettersCheck->Location = System::Drawing::Point(47, 34);
 			this->LowerLettersCheck->Name = L"LowerLettersCheck";
-			this->LowerLettersCheck->Size = System::Drawing::Size(113, 17);
+			this->LowerLettersCheck->Size = System::Drawing::Size(153, 23);
 			this->LowerLettersCheck->TabIndex = 3;
 			this->LowerLettersCheck->Text = L"Lower Letters (a-z)";
-			this->LowerLettersCheck->UseVisualStyleBackColor = true;
+			this->LowerLettersCheck->UseVisualStyleBackColor = false;
 			// 
 			// NumbersCheck
 			// 
 			this->NumbersCheck->AutoSize = true;
+			this->NumbersCheck->BackColor = System::Drawing::Color::Transparent;
+			this->NumbersCheck->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->NumbersCheck->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->NumbersCheck->Location = System::Drawing::Point(47, 80);
 			this->NumbersCheck->Name = L"NumbersCheck";
-			this->NumbersCheck->Size = System::Drawing::Size(92, 17);
+			this->NumbersCheck->Size = System::Drawing::Size(123, 23);
 			this->NumbersCheck->TabIndex = 4;
 			this->NumbersCheck->Text = L"Numbers (0-9)";
-			this->NumbersCheck->UseVisualStyleBackColor = true;
+			this->NumbersCheck->UseVisualStyleBackColor = false;
 			// 
 			// SpecialCharactersCheck
 			// 
 			this->SpecialCharactersCheck->AutoSize = true;
+			this->SpecialCharactersCheck->BackColor = System::Drawing::Color::Transparent;
+			this->SpecialCharactersCheck->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->SpecialCharactersCheck->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->SpecialCharactersCheck->Location = System::Drawing::Point(47, 104);
 			this->SpecialCharactersCheck->Name = L"SpecialCharactersCheck";
-			this->SpecialCharactersCheck->Size = System::Drawing::Size(285, 17);
+			this->SpecialCharactersCheck->Size = System::Drawing::Size(409, 23);
 			this->SpecialCharactersCheck->TabIndex = 5;
 			this->SpecialCharactersCheck->Text = L"Special Characters (   !\"#$%&()*+,-./:;<=>\?@[\\]^_`{|}~   )";
-			this->SpecialCharactersCheck->UseVisualStyleBackColor = true;
+			this->SpecialCharactersCheck->UseVisualStyleBackColor = false;
 			// 
 			// NumberEnter
 			// 
-			this->NumberEnter->Location = System::Drawing::Point(47, 9);
+			this->NumberEnter->Location = System::Drawing::Point(48, 9);
 			this->NumberEnter->Name = L"NumberEnter";
 			this->NumberEnter->Size = System::Drawing::Size(90, 20);
 			this->NumberEnter->TabIndex = 6;
@@ -167,9 +189,14 @@ namespace GeneratorPasswordsByArt {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(143, 9);
+			this->label1->BackColor = System::Drawing::Color::Transparent;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label1->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label1->Location = System::Drawing::Point(143, 12);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(179, 13);
+			this->label1->Size = System::Drawing::Size(248, 19);
 			this->label1->TabIndex = 7;
 			this->label1->Text = L"Number Of Characters In Generation";
 			// 
@@ -193,32 +220,42 @@ namespace GeneratorPasswordsByArt {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(144, 130);
+			this->label2->BackColor = System::Drawing::Color::Transparent;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold));
+			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->label2->Location = System::Drawing::Point(143, 126);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(89, 13);
+			this->label2->Size = System::Drawing::Size(124, 19);
 			this->label2->TabIndex = 10;
 			this->label2->Text = L"Number Of Lines ";
 			// 
 			// CopyResultButton
 			// 
-			this->CopyResultButton->Location = System::Drawing::Point(48, 403);
+			this->CopyResultButton->BackColor = System::Drawing::Color::Transparent;
+			this->CopyResultButton->Location = System::Drawing::Point(47, 385);
 			this->CopyResultButton->Name = L"CopyResultButton";
-			this->CopyResultButton->Size = System::Drawing::Size(75, 23);
+			this->CopyResultButton->Size = System::Drawing::Size(75, 25);
 			this->CopyResultButton->TabIndex = 11;
 			this->CopyResultButton->Text = L"Copy Result";
-			this->CopyResultButton->UseVisualStyleBackColor = true;
+			this->CopyResultButton->UseVisualStyleBackColor = false;
 			this->CopyResultButton->Visible = false;
 			this->CopyResultButton->Click += gcnew System::EventHandler(this, &mainform::CopyResultButton_Click);
 			// 
 			// RangeNumbers
 			// 
 			this->RangeNumbers->AutoSize = true;
-			this->RangeNumbers->Location = System::Drawing::Point(348, 8);
+			this->RangeNumbers->BackColor = System::Drawing::Color::Transparent;
+			this->RangeNumbers->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->RangeNumbers->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->RangeNumbers->Location = System::Drawing::Point(212, 34);
 			this->RangeNumbers->Name = L"RangeNumbers";
-			this->RangeNumbers->Size = System::Drawing::Size(214, 17);
+			this->RangeNumbers->Size = System::Drawing::Size(273, 23);
 			this->RangeNumbers->TabIndex = 12;
 			this->RangeNumbers->Text = L"Enable Range Characters In Passwords";
-			this->RangeNumbers->UseVisualStyleBackColor = true;
+			this->RangeNumbers->UseVisualStyleBackColor = false;
 			this->RangeNumbers->CheckedChanged += gcnew System::EventHandler(this, &mainform::RangeNumbers_CheckedChanged);
 			// 
 			// openFileDialog1
@@ -246,9 +283,14 @@ namespace GeneratorPasswordsByArt {
 			// FromLabel
 			// 
 			this->FromLabel->AutoSize = true;
-			this->FromLabel->Location = System::Drawing::Point(6, 12);
+			this->FromLabel->BackColor = System::Drawing::Color::Transparent;
+			this->FromLabel->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->FromLabel->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->FromLabel->Location = System::Drawing::Point(-2, 12);
 			this->FromLabel->Name = L"FromLabel";
-			this->FromLabel->Size = System::Drawing::Size(30, 13);
+			this->FromLabel->Size = System::Drawing::Size(40, 19);
 			this->FromLabel->TabIndex = 10;
 			this->FromLabel->Text = L"From";
 			this->FromLabel->Visible = false;
@@ -256,9 +298,14 @@ namespace GeneratorPasswordsByArt {
 			// ToLabel
 			// 
 			this->ToLabel->AutoSize = true;
+			this->ToLabel->BackColor = System::Drawing::Color::Transparent;
+			this->ToLabel->Font = (gcnew System::Drawing::Font(L"Comic Sans MS", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->ToLabel->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->ToLabel->Location = System::Drawing::Point(75, 12);
 			this->ToLabel->Name = L"ToLabel";
-			this->ToLabel->Size = System::Drawing::Size(20, 13);
+			this->ToLabel->Size = System::Drawing::Size(25, 19);
 			this->ToLabel->TabIndex = 15;
 			this->ToLabel->Text = L"To";
 			this->ToLabel->Visible = false;
@@ -267,8 +314,10 @@ namespace GeneratorPasswordsByArt {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->AutoSize = true;
-			this->ClientSize = System::Drawing::Size(633, 443);
+			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
+			this->BackColor = System::Drawing::Color::ForestGreen;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->ClientSize = System::Drawing::Size(634, 411);
 			this->Controls->Add(this->NumberEnter);
 			this->Controls->Add(this->ToTextBox);
 			this->Controls->Add(this->FromTextBox);
@@ -285,6 +334,9 @@ namespace GeneratorPasswordsByArt {
 			this->Controls->Add(this->GenerateButton);
 			this->Controls->Add(this->FromLabel);
 			this->Controls->Add(this->ToLabel);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->MaximizeBox = false;
 			this->Name = L"mainform";
 			this->Text = L"Generator Passwords By Art";
 			this->Load += gcnew System::EventHandler(this, &mainform::mainform_Load);
@@ -311,7 +363,7 @@ namespace GeneratorPasswordsByArt {
 	}
 		   
 	private: System::Void GenerateButton_Click(System::Object^ sender, System::EventArgs^ e) {
-
+		
 		if (this->RangeNumbers->Checked == false && (this->NumberEnter->Text == "" || this->NumberEnter->Text == "0") )
 		{
 			MessageBox::Show("Please select the number of characters", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
@@ -320,15 +372,19 @@ namespace GeneratorPasswordsByArt {
 		
 		if (this->RangeNumbers->Checked && (this->FromTextBox->Text == ""))
 		{
+			
 			MessageBox::Show("Please enter the number in the field From", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			return;
 		}
-		if (this->RangeNumbers->Checked && (this->ToTextBox->Text == ""))
+		else if (this->RangeNumbers->Checked && (this->ToTextBox->Text == ""))
 		{
+			
 			MessageBox::Show("Please enter the number in the field To", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			return;
 		}
-		if(Convert::ToInt32(this->FromTextBox->Text)> Convert::ToInt32(this->ToTextBox->Text))
+
+
+		if(this->RangeNumbers->Checked && (Convert::ToInt32(this->FromTextBox->Text)> Convert::ToInt32(this->ToTextBox->Text)))
 		{
 			MessageBox::Show("From must be lower than To", "Error", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			return;
@@ -381,7 +437,24 @@ namespace GeneratorPasswordsByArt {
 
 		String^ result = "";
 
-		if (this->RangeNumbers->Checked)
+		if (this->RangeNumbers->Checked == false)
+		{
+
+			for (int j = 0; j < Convert::ToInt32(this->NumberOfLinesEnter->Text); j++)
+			{
+				String^ resik = "";
+				for (int i = 0; i < Convert::ToInt32(this->NumberEnter->Text); i++)
+				{
+					char random_char = rand_range[dist(gen)];
+					resik += (wchar_t)random_char;
+				}
+				result += resik;
+				result += "\r\n";
+
+			}
+			
+		}
+		else if (this->RangeNumbers->Checked)
 		{
 			for (int j = 0; j < Convert::ToInt32(this->NumberOfLinesEnter->Text); j++)
 			{
@@ -396,21 +469,7 @@ namespace GeneratorPasswordsByArt {
 
 			}
 		}
-		else if(this->RangeNumbers->Checked == false)
-		{
-			for (int j = 0; j < Convert::ToInt32(this->NumberOfLinesEnter->Text); j++)
-			{
-				String^ resik = "";
-				for (int i = 0; i < Convert::ToInt32(this->NumberEnter->Text); i++)
-				{
-					char random_char = rand_range[dist(gen)];
-					resik += (wchar_t)random_char;
-				}
-				result += resik;
-				result += "\r\n";
-
-			}
-		}
+		
 		result = result->TrimEnd();
 		this->genresult->Text = result;
 		this->CopyResultButton->Visible = true;
