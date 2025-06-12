@@ -15,7 +15,8 @@ A simple and user-friendly password generator built with C++/CLI using Windows F
 ---
 
 ## 🖼️ Interface Preview
-![image](https://github.com/user-attachments/assets/921b7916-abee-46f7-9ecc-cbd79093bedc)
+![image](https://github.com/user-attachments/assets/8df5fd52-b1cf-4927-adbc-4afed9253d48)
+
 
 ## 📬 Feedback
 Feel free to open an issue if you find a bug or have a feature request.
